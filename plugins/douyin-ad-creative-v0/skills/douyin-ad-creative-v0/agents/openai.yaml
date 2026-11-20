@@ -1,0 +1,8 @@
+interface:
+  display_name: 抖音广告素材工坊 V0
+  short_description: 设计广告结构与节奏，输出标准分镜和视频提示词，制作素材并检查动态美学
+  default_prompt: 使用 $douyin-ad-creative-v0，根据商品图片和资料设计3条不同结构与节奏的广告，输出标准分镜、逐镜视频提示词并制作测试素材。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

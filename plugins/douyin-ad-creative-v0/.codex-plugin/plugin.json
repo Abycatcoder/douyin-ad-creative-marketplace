@@ -1,0 +1,22 @@
+{
+  "name": "douyin-ad-creative-v0",
+  "version": "0.2.0",
+  "description": "抖音广告素材 V0：场景创意、广告结构与节奏、标准分镜、逐镜视频提示词、动态视频剪辑与美学检查。",
+  "author": {
+    "name": "Human A"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "抖音广告素材工坊 V0",
+    "shortDescription": "从商品场景到广告结构、标准分镜和动态素材",
+    "longDescription": "分析商品与受众场景，选择广告结构及节奏，输出九列分镜和逐镜视频提示词。有视频工具或实拍片段时制作动态成片；只有图片时制作明确标记的动态分镜预演。包含美学、动作及商品一致性检查与版本追踪，尚未接入实际投放。",
+    "developerName": "Human A",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "根据商品资料生成抖音广告创意和测试素材。",
+      "修改已有广告素材的开头，并保留上一版本。",
+      "检查这组抖音广告素材的事实、画面与字幕。"
+    ]
+  }
+}

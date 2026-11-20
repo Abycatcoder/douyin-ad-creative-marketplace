@@ -1,0 +1,6 @@
+Derived subset of Noto Sans CJK SC Regular.
+Upstream: https://github.com/notofonts/noto-cjk
+Font source: Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf
+Subset includes GB2312 characters, Latin-1, and selected punctuation.
+Licensed under SIL Open Font License 1.1; see OFL.txt.
+The subset was made with fontTools; no endorsement by the font authors is implied.

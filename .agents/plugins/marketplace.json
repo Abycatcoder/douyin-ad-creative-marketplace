@@ -1,0 +1,20 @@
+{
+  "name": "personal",
+  "interface": {
+    "displayName": "Personal"
+  },
+  "plugins": [
+    {
+      "name": "douyin-ad-creative-v0",
+      "source": {
+        "source": "local",
+        "path": "./plugins/douyin-ad-creative-v0"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
