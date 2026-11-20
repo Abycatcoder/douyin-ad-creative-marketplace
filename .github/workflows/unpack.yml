@@ -1,0 +1,27 @@
+name: Unpack plugin marketplace
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/unpack.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract project files
+        run: |
+          unzip -q 'douyin-ad-creative-marketplace(1).zip' -d /tmp/plugin-marketplace
+          cp -a /tmp/plugin-marketplace/douyin-ad-creative-marketplace/. .
+          rm -f 'douyin-ad-creative-marketplace(1).zip'
+          rm -f .github/workflows/unpack.yml
+      - name: Commit extracted project
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Extract plugin marketplace files'
+          git push
